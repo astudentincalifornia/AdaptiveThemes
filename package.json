@@ -12,6 +12,24 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ThemesOptions",
+          "title": "AdaptiveThemesOptions",
+          "icon": "media/page-svgrepo-com.svg"
+        }
+      ]
+    },
+    "views": {
+      "ThemesOptions": [
+          {
+            "id": "adaptiveTheme",
+            "name": "Adaptive Themes Controls" ,
+            "icon": "media/page-svgrepo-com.svg"
+          }
+      ]
+    },
     "commands": [
       {
         "command": "adaptivethemes.helloWorld",
